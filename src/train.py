@@ -8,7 +8,6 @@ from tqdm import tqdm
 import pickle
 import os
 
-# ---------------- CONFIG ----------------
 EMBEDDING_DIM = 100
 WINDOW_SIZE = 5
 MIN_COUNT = 5
@@ -19,7 +18,7 @@ LR = 0.001
 
 DATA_PATH = "data/wiki_clean.txt"
 SAVE_DIR = "results"
-# ---------------------------------------
+
 
 os.makedirs(SAVE_DIR, exist_ok=True)
 
@@ -63,8 +62,6 @@ def generate_batch(batch_size):
 
     return centers, contexts
 
-
-# ---------------- TRAINING ----------------
 for epoch in range(EPOCHS):
     total_loss = 0
     steps = 10000  # number of updates per epoch
@@ -95,7 +92,6 @@ for epoch in range(EPOCHS):
     avg_loss = total_loss / steps
     print(f"Epoch {epoch+1} Average Loss: {avg_loss:.4f}")
 
-# ---------------- SAVE ----------------
 torch.save(model.in_embeddings.weight.data.cpu(), f"{SAVE_DIR}/embeddings.pt")
 
 with open(f"{SAVE_DIR}/word2idx.pkl", "wb") as f:
