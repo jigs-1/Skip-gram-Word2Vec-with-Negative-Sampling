@@ -123,25 +123,5 @@ Jurafsky & Martin, Speech and Language Processing, Chapter 5
 Author
 Geda Jignash Babu
 
-markdown
-Copy code
-
----
-
-### ✅ You can now:
-- Paste this directly into `README.md`
-- Commit and push
-- Submit the GitHub link confidently
-
-If you want, I can also give you:
-- A **one-line Classroom submission text**
-- A **short project description**
-- A **viva-ready explanation**
-
-Just tell me.
-
-
-
-
 
 
