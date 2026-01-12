@@ -1,9 +1,20 @@
-
-# Data
-data/wiki_clean.txt
-data/enwik8/wiki_clean.txt
-**/wiki_clean.txt
-
-# Python
+# Python cache files
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Numpy / data files (optional)
+*.npy
+
+# IDE / editor settings
+.vscode/
+.idea/
